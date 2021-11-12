@@ -1,0 +1,6 @@
+name: "StaffUtil"
+main: DerCooleVonDem\StaffUtil\StaffUtil
+version: 1
+api: 3.0.0
+author: DerCooleVonDem
+description: "StaffUtil is a plugin for PocketMine-MP"
