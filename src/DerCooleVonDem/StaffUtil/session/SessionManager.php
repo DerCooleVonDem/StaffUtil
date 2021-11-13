@@ -11,7 +11,10 @@ class SessionManager
     
     public static function createSession(Player $player)
     {
-        $session = new Session($player);
+        // Check if the player is allowed to write in the staff chat
+        $allowedToWrite = $player->hasPermission("staffutil.chat.write");
+
+        $session = new Session($player, $allowedToWrite, false);
         self::$sessions[$player->getName()] = $session;
     }
     
